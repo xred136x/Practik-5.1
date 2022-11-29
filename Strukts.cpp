@@ -26,7 +26,8 @@ void save_book(book& P, std::string path) {
 		std::cout << "Open file error\n";
 	out.close();
 }
-void add_book(book*& P, const int len) {
+void add_book(book* P, const int len) {
+	//int plen = len + 1;
 	book* tmp = new book[len + 1]{};
 	for (int i = 0; i < len; i++)
 		tmp[i] = P[i];
